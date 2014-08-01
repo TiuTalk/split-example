@@ -36,7 +36,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'split', '~> 0.7.2'
+gem 'split', '~> 0.7.2', require: 'split/dashboard'
 
 group :production do
   gem 'pg'
