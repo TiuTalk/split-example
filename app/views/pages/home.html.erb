@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container" role="main">
+  <div call="hero">
+    <h1>Our products are fantastic!</h1>
+
+    <% ab_test('call_to_action', 'Sign-up!', 'Join us', 'Go go go') do |text| %>
+      <%= link_to(text, pages_signup_path, class: 'btn btn-primary btn-lg') %>
+    <% end %>
+  </div>
+</div>
